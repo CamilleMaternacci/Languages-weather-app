@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weahter App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/78eebef08c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="language-tools-area">
+            <button class="eng"><img src="./img/united-kingdom-flag-uk.svg" class="icon-eng active-flag"
+                    alt="united-kingdom-flag"></button>
+            <button class="pl"><img src="./img/poland-flag.svg" class="icon-pl" alt="poland-flag"></button>
+        </div>
+        <div class="search-area">
+            <button class="search-btn"><input type="text" id="search-input" placeholder="Enter the city name"><i
+                    class="fa-solid fa-magnifying-glass-location"></i></button>
+        </div>
+               <div class="current-weather-area">
+                <h2 class="current-h2">Current Weather</h2>
+                <p class="city"></p>
+                <p class="current-data"></p>
+                <p class="current-weather"></p>
+                <p class="temperature"></p>
+                <img class="current-pic" alt="actual weather image">
+            </div>
+        <div class="long-term-weather">
+            <h2 class="forecast-h2">3 day weather forecast</h2>
+            <div class="long-term-row">
+                <div class="column-weather active-column">
+                    <p class="day day-one"></p>
+                    <img class="current-pics pics-one" alt="actual weather image">
+                    <p class="weather weather-day-one"></p>
+                    <p class="temperature temp-one"></p>
+                </div>
+                <div class="column-weather">
+                    <p class="day day-two"></p>
+                    <img class="current-pics pics-two" alt="actual weather image">
+                    <p class="weather weather-day-two"></p>
+                    <p class="temperature temp-two"></p>
+                </div>
+                <div class="column-weather">
+                    <p class="day day-three"></p>
+                    <img class="current-pics pics-three" alt="actual weather image">
+                    <p class="weather weather-day-three"></p>
+                    <p class="temperature temp-three"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

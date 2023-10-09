@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Quicksand", sans-serif;
+  background: rgb(101, 123, 215);
+  background: linear-gradient(90deg, rgb(72, 41, 211) 0%, rgb(91, 98, 230) 25%, rgb(147, 100, 162) 50%, rgb(90, 70, 171) 75%, rgb(72, 41, 211) 100%);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  height: 880px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: rgb(101, 123, 215);
+  background: linear-gradient(90deg, rgb(75, 50, 212) 0%, rgb(91, 98, 230) 40%, rgb(75, 50, 212) 100%);
+}
+.app .language-tools-area {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 1em;
+  padding: 1em 2em;
+  border-radius: 8px;
+}
+.app .language-tools-area button {
+  margin-right: 0.2em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.app .language-tools-area button img {
+  padding: 0.2em;
+}
+.app .language-tools-area button .active-flag {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background: rgb(101, 123, 215);
+  background: linear-gradient(90deg, rgb(69, 48, 107) 0%, rgb(90, 103, 221) 18%, rgb(23, 44, 126) 83%);
+}
+.app .search-area .search-btn {
+  padding: 0.2em;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+}
+.app .search-area .search-btn i {
+  padding: 0.2em;
+  font-size: 2.4rem;
+  transition: color 0.3s;
+  color: rgb(132, 49, 228);
+  cursor: pointer;
+}
+.app .search-area .search-btn i:hover {
+  color: rgb(98, 30, 177);
+}
+.app .search-area .search-btn input {
+  padding: 0.2em;
+  font-size: 2.2rem;
+  border: none;
+  outline: none;
+  animation: input-animation 5s forwards;
+  transition: animation 0.3s;
+}
+@keyframes input-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 69%;
+  }
+}
+.app .search-area .error-input {
+  color: rgb(51, 28, 255);
+}
+.app .current-weather-area {
+  margin-top: 3em;
+  padding: 2em;
+  width: 380px;
+  text-align: center;
+  border-radius: 10px;
+  background: rgb(67, 132, 255);
+  background: linear-gradient(90deg, rgb(48, 57, 177) 0%, rgb(181, 98, 202) 50%, rgb(48, 57, 177) 100%);
+  border: 2px solid wheat;
+}
+.app .current-weather-area h2,
+.app .current-weather-area p {
+  color: white;
+}
+.app .current-weather-area h2 {
+  font-size: 3rem;
+}
+.app .current-weather-area p {
+  margin: 0.5em;
+  padding: 0.2em;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  border-bottom: 1px solid white;
+}
+.app .current-weather-area .current-pic {
+  height: 10em;
+}
+.app .long-term-weather h2 {
+  margin-top: 0.7em;
+  font-size: 3.2rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+.app .long-term-weather .long-term-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+.app .long-term-weather .long-term-row .column-weather {
+  padding: 0.3em;
+  width: 320px;
+  margin-top: 1.5em;
+  margin-right: 2em;
+  text-align: center;
+  border: 2px solid whitesmoke;
+  border-radius: 35px;
+  background: rgb(67, 132, 255);
+  background: linear-gradient(90deg, rgb(46, 68, 189) 0%, rgb(135, 119, 223) 55%, rgb(48, 69, 189) 100%);
+}
+.app .long-term-weather .long-term-row .column-weather p {
+  font-size: 1.7rem;
+  padding: 0.3em;
+  color: white;
+}
+.app .long-term-weather .long-term-row .column-weather .day,
+.app .long-term-weather .long-term-row .column-weather .temperature,
+.app .long-term-weather .long-term-row .column-weather .weather {
+  font-weight: bold;
+}
+.app .long-term-weather .long-term-row .column-weather .temperature {
+  font-size: 1.9rem;
+}
+.app .long-term-weather .long-term-row .column-weather .current-pics {
+  margin-top: 0.2em;
+  height: 7em;
+}
+.app .long-term-weather .long-term-row .active-column {
+  background: rgb(67, 132, 255);
+  background: linear-gradient(90deg, rgb(48, 57, 177) 0%, rgb(181, 98, 202) 50%, rgb(48, 57, 177) 100%);
+}/*# sourceMappingURL=style.css.map */
